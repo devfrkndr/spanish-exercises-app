@@ -11,24 +11,17 @@ gameContainer.classList.add('container');
 const gameWordDiv = document.createElement('div');
 gameWordDiv.classList.add('gameWordDiv');
 
-const gameWordH = document.createElement('h1');
+const gameWordH = document.createElement('div');
 gameWordH.classList.add('gameWordH');
 
 const selectionDiv = document.createElement('div');
 selectionDiv.classList.add('selectionDiv');
-
-const selection1 = document.createElement('p');
-const selection2 = document.createElement('p');
-const selection3 = document.createElement('p');
-const selection4 = document.createElement('p');
-const selection5 = document.createElement('p');
 
 gameFragment.appendChild(gameSection);
 gameSection.appendChild(gameContainer);
 gameContainer.appendChild(gameWordDiv);
 gameContainer.appendChild(selectionDiv);
 gameWordDiv.appendChild(gameWordH);
-selectionDiv.append(selection1, selection2, selection3, selection4, selection5);
 
 document.body.append(gameFragment);
 
@@ -103,6 +96,8 @@ const saveWords = async () => {
   const adjectivosO = words.adjectivos.o;
   const adjectivosOthers = words.adjectivos.others;
   const verbos = words.verbos;
+  const preguntas = words.preguntas;
+  const dias = words.dias;
 
   const allWords = alfabeto.concat(
     numeros,
@@ -110,23 +105,44 @@ const saveWords = async () => {
     feminino,
     adjectivosO,
     adjectivosOthers,
-    verbos
+    verbos,
+    preguntas,
+    dias
   );
+  return allWords;
+};
 
+const startGame = async function () {
+  const allWords = await saveWords();
   const keys = getFirstKeys(allWords);
   const values = getFirstValues(allWords);
-
-  // console.log(keys);
-  // console.log(values);
-
   const randomNumbers = getRandomNumbers(keys, values);
-  console.log(randomNumbers);
+  const selectionsList = [];
   gameWordH.innerText = keys[randomNumbers[0]];
+  gameWordH.setAttribute('id', `${randomNumbers[0]}`);
   randomNumbers[1].forEach((e) => {
-    const selections = document.createElement('p');
+    const selections = document.createElement('div');
     selections.innerText = values[e];
+    selections.classList.add('selections');
+    selections.setAttribute('id', `${e}`);
     selectionDiv.append(selections);
+    selectionsList.push(selections);
+  });
+
+  selectionsList.forEach((e) => {
+    e.addEventListener('click', function () {
+      if (e.id === gameWordH.id) {
+        console.log('true');
+        setTimeout(function () {
+          window.location.reload();
+        }, 1000);
+        e.style.backgroundColor = '#90A17D';
+      } else {
+        e.style.backgroundColor = '#B97A95';
+      }
+    });
   });
 };
 
 saveWords();
+startGame();
