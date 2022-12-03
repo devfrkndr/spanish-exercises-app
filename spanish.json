@@ -88,7 +88,10 @@
       { "brazo": "arm" },
       { "dedo": "finger" },
       { "pie": "foot" },
+      { "mes": "month" },
       { "cuello": "neck" },
+      { "campo": "countryside" },
+      { "de hecho": "in fact" },
       { "fin": "fin" }
     ],
     "feminino": [
@@ -104,10 +107,10 @@
       { "pierna": "leg" },
       { "espalda": "back" },
       { "barriga": "stomach" },
+      { "plata": "silver" },
       { "rodilla": "knee" },
       { "frante": "eyebrow" },
       { "barbilla": "jaw" },
-
       { "mejilla": "cheek" },
       { "nariz": "nose" },
       { "silla": "chair" },
@@ -131,6 +134,8 @@
       { "señor": "sir" },
       { "señora": "ma'am" },
       { "señorita": "miss(young lady)" },
+      { "principio": "beginning" },
+      { "fiesta": "party" },
       { "fiesta": "party" },
       { "película": "movie" }
     ]
@@ -157,6 +162,7 @@
       { "rico": "rico" },
       { "simpatíco": "sempatic" },
       { "tacaño": "stingy" },
+      { "aburrido": "boring" },
       { "viejo": "old" },
       { "cansado": "tired" },
       { "delicioso": "tasty" },
@@ -167,6 +173,7 @@
       { "lindo": "" },
       { "emocionado": "excited" },
       { "divertida": "fun" },
+      { "canadiense": "canadian" },
       { "favorito": "favorite" }
     ],
     "others": [
@@ -179,28 +186,158 @@
     ]
   },
   "verbos": [
-    { "ver": "to see" },
-    { "disfrutar": "to enjoy" },
     {
-      "llamarse": "to call",
+      "extinguir": "to extinguish",
       "el presente simple": [
-        "me llamo",
-        "te llamas",
-        "se llama",
-        "nos llamamos",
-        "os llamais",
-        "se llaman"
+        "extingo",
+        "extingues",
+        "extingue",
+        "extinguimos",
+        "extinuís",
+        "extinguen"
       ]
     },
     {
-      "poder": "can",
+      "dirigir": "to manage",
       "el presente simple": [
-        "puedo",
-        "puedes",
-        "puede",
-        "podemos",
-        "podéis",
-        "pueden"
+        "dirijo",
+        "diriges",
+        "dirige",
+        "dirigimos",
+        "dirigís",
+        "dirigen"
+      ]
+    },
+    {
+      "escoger": "to choose",
+      "el presente simple": [
+        "escojo",
+        "escoges",
+        "escoge",
+        "escogemos",
+        "escogéis",
+        "escogen"
+      ]
+    },
+    {
+      "exigir": "to demand",
+      "el presente simple": [
+        "exijo",
+        "exiges",
+        "exigige",
+        "exigigimos",
+        "exigís",
+        "extinguen"
+      ]
+    },
+    {
+      "recoger": "to gather, to pick up",
+      "el presente simple": [
+        "recojo",
+        "recoges",
+        "recoge",
+        "recogemos",
+        "recogéis",
+        "recogen"
+      ]
+    },
+    {
+      "caber": "to fit",
+      "el presente simple": [
+        "quepo",
+        "cabes",
+        "caben",
+        "cabemos",
+        "cabéis",
+        "caben"
+      ]
+    },
+    {
+      "caer": "to fall",
+      "el presente simple": [
+        "caigo",
+        "caes",
+        "cae",
+        "caemos",
+        "caéis",
+        "caen"
+      ]
+    },
+    {
+      "conocer": "to know",
+      "el presente simple": [
+        "conozco",
+        "conoces",
+        "conoce",
+        "conocemos",
+        "conocéis",
+        "conocen"
+      ]
+    },
+    {
+      "dar": "to give",
+      "el presente simple": [
+        "doy",
+        "das",
+        "da",
+        "damos",
+        "dáis",
+        "dan"
+      ]
+    },
+    {
+      "hacer": "to do, to make",
+      "el presente simple": [
+        "hago",
+        "haces",
+        "hace",
+        "hacemos",
+        "hacéis",
+        "hacen"
+      ]
+    },
+    {
+      "poner": "to put",
+      "el presente simple": [
+        "pongo",
+        "pones",
+        "pone",
+        "ponemos",
+        "poneis",
+        "ponen"
+      ]
+    },
+    {
+      "saber": "to know, to taste",
+      "el presente simple": [
+        "sé",
+        "sabes",
+        "sabe",
+        "sabemos",
+        "sabéis",
+        "saben"
+      ]
+    },
+    {
+      "salir": "to go out, to leave",
+      "el presente simple": [
+        "salgo",
+        "sales",
+        "sale",
+        "salemos",
+        "saléis",
+        "salen"
+      ]
+    },
+    {
+      "traducir": "to translate",
+      "el presente simple": [
+        "traduzco",
+        "traduces",
+        "traduce",
+        "traducimos",
+        "traducís",
+        "traducen"
       ]
     },
     {
@@ -209,30 +346,451 @@
         "traigo",
         "traes",
         "trae",
-        "traemos",
-        "traéis",
-        "traen"
+        "tracemos",
+        "tracéis",
+        "tracen"
       ]
     },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" },
-    { "ver": "to see" }
+    {
+      "valer": "to worth",
+      "el presente simple": [
+        "valgo",
+        "vales",
+        "vale",
+        "valemos",
+        "valéis",
+        "valen"
+      ]
+    },
+    {
+      "ver": "to see",
+      "el presente simple": [
+        "veo",
+        "ves",
+        "ve",
+        "vemos",
+        "veis",
+        "ven"
+      ]
+    },
+    {
+      "acertar": "to guess",
+      "el presente simple": [
+        "acierto",
+        "aciertes",
+        "acierte",
+        "acertamos",
+        "acertáis",
+        "aciertan"
+      ]
+    },
+    {
+      "atravesar": "to cross",
+      "el presente simple": [
+        "atravieso",
+        "atraviesas",
+        "atraciesa",
+        "atravesamos",
+        "atravesáis",
+        "atraviesan"
+      ]
+    },
+    {
+      "cerrar": "to close",
+      "el presente simple": [
+        "cierro",
+        "cierras",
+        "cierra",
+        "cerramos",
+        "cerráis",
+        "cierran"
+      ]
+    },
+    {
+      "confesar": "to confess",
+      "el presente simple": [
+        "confieso",
+        "confiesas",
+        "confiesa",
+        "confesamos",
+        "confesáis",
+        "confeisan"
+      ]
+    },
+    {
+      "defender": "to defend",
+      "el presente simple": [
+        "defiendo",
+        "defiendes",
+        "defiende",
+        "defendemos",
+        "defendéis",
+        "defenden"
+      ]
+    },
+    {
+      "despertarse": "to wake up",
+      "el presente simple": [
+        "me despierto",
+        "te despiertas",
+        "se despierta",
+        "nos despertamos",
+        "os despertáis",
+        "se despiertan"
+      ]
+    },
+    {
+      "empezar": "to begin, to start",
+      "el presente simple": [
+        "empierzo",
+        "empierzas",
+        "empierza",
+        "empezamos",
+        "empezáis",
+        "empiezan"
+      ]
+    },
+    {
+      "encerrar": "to enclose",
+      "el presente simple": [
+        "encierro",
+        "encierras",
+        "encierra",
+        "encerramos",
+        "encerráis",
+        "encerran"
+      ]
+    },
+    {
+      "fregar": "to scrub, to wash",
+      "el presente simple": [
+        "friego",
+        "friegas",
+        "friega",
+        "fregamos",
+        "fregáis",
+        "friegan"
+      ]
+    },
+    {
+      "mentir": "to lie",
+      "el presente simple": [
+        "miento",
+        "mientes",
+        "miente",
+        "mentimos",
+        "mentís",
+        "mienten"
+      ]
+    },
+    {
+      "nevar": "to snow",
+      "el presente simple": [
+        "nievo",
+        "nievas",
+        "nieva",
+        "nevamos",
+        "neváis",
+        "nievan"
+      ]
+    },
+    {
+      "perder": "to lose",
+      "el presente simple": [
+        "pierdo",
+        "pierdes",
+        "pierde",
+        "perdemos",
+        "perdéis",
+        "pierden"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "sentarse": "to sit",
+      "el presente simple": [
+        "me siento",
+        "te sientes",
+        "se siente",
+        "nos sentamos",
+        "os sentáis",
+        "se sientan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    },
+    {
+      "recomendar": "to recommend",
+      "el presente simple": [
+        "recomiendo",
+        "recomiendas",
+        "recomienda",
+        "recomendamos",
+        "recomandáís",
+        "recomiendan"
+      ]
+    }
   ],
-  "preguntas": [{ "cuándo": "when" }],
+  "preguntas": [
+    { "cuándo": "when" },
+    { "quién": "who" },
+    { "por qué": "why" },
+    { "cuál": "which" },
+    { "cuánto": "how much" },
+    { "de dónde": "from where" },
+    { "adóne": "to where" },
+    { "por dónde": "whereabout" }
+  ],
   "días": [
     { "lunes": "monday" },
     { "martes": "tuesday" },
