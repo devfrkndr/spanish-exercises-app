@@ -43,8 +43,10 @@ body > section > div > div.selectionDiv {
   background-color: #deb6ab;
 }
 
-.selections:hover {
-  background-color: #ac7d88;
+@media (hover: hover) {
+  .selections:hover {
+    background-color: #ac7d88;
+  }
 }
 
 .gameWordH {

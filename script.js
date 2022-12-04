@@ -158,9 +158,7 @@ const startGame = async function () {
   function clickFunction(e) {
     e.addEventListener('click', function () {
       if (e.id === gameWordH.id) {
-        e.style.backgroundColor = '#E5EBB2';
         setTimeout(function () {
-          e.style.backgroundColor = '#deb6ab';
           selectionsList = [];
           deleteNodes();
           game = playRound();
