@@ -112,10 +112,16 @@ const startGame = async function () {
 
   const keys = getFirstKeys(allWords);
   const values = getFirstValues(allWords);
-  const randomNumbers = getRandomNumbers(keys, values);
-  let selectionsList = [];
+  const randomize = function () {
+    const randomNumbers = getRandomNumbers(keys, values);
+    let selectionsList = [];
+    return [randomNumbers, selectionsList];
+  };
 
   function playRound() {
+    const randoms = randomize();
+    const randomNumbers = randoms[0];
+    const selectionsList = randoms[1];
     const randomWord = keys[randomNumbers[0]];
     if (getFirstKeys(masculino).includes(randomWord)) {
       gameWordH.innerText = `el ${randomWord}`;
@@ -133,23 +139,43 @@ const startGame = async function () {
       selectionDiv.append(selections);
       selectionsList.push(selections);
     });
+    return [randomNumbers, selectionsList];
   }
 
-  playRound();
+  let game = playRound();
+  let randomNumbers = game[0];
+  let selectionsList = game[1];
 
-  selectionsList.forEach((e) => {
+  console.log(randomNumbers, selectionsList);
+
+  function deleteNodes() {
+    const selectionNode = document.getElementById('selectionDiv');
+    while (selectionNode.firstChild) {
+      selectionNode.removeChild(selectionNode.lastChild);
+    }
+  }
+
+  function clickFunction(e) {
     e.addEventListener('click', function () {
       if (e.id === gameWordH.id) {
         console.log('true');
         e.style.backgroundColor = '#E5EBB2';
         setTimeout(function () {
-          window.location.reload();
+          selectionsList = [];
+          deleteNodes();
+          game = playRound();
+          randomNumbers = game[0];
+          selectionsList = game[1];
+          console.log(randomNumbers, selectionsList);
+          selectionsList.forEach((e) => clickFunction(e));
+          // window.top.location.reload(true);
         }, 1000);
       } else {
         e.style.backgroundColor = '#B97A95';
       }
     });
-  });
+  }
+  selectionsList.forEach((e) => clickFunction(e));
 };
 
 startGame();
