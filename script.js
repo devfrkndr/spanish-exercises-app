@@ -158,15 +158,14 @@ const startGame = async function () {
   function clickFunction(e) {
     e.addEventListener('click', function () {
       if (e.id === gameWordH.id) {
-        console.log('true');
         e.style.backgroundColor = '#E5EBB2';
         setTimeout(function () {
+          e.style.backgroundColor = '#ac7d88';
           selectionsList = [];
           deleteNodes();
           game = playRound();
           randomNumbers = game[0];
           selectionsList = game[1];
-          console.log(randomNumbers, selectionsList);
           selectionsList.forEach((e) => clickFunction(e));
           // window.top.location.reload(true);
         }, 1000);
