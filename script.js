@@ -170,7 +170,7 @@ const startGame = async function () {
           selectionsList.forEach((e) => clickFunction(e));
           // window.top.location.reload(true);
         }, 1000);
-      } else {
+      } else if (e.id !== gameWordH.id) {
         e.style.backgroundColor = '#B97A95';
       }
     });
