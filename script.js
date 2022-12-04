@@ -16,6 +16,7 @@ gameWordH.classList.add('gameWordH');
 
 const selectionDiv = document.createElement('div');
 selectionDiv.classList.add('selectionDiv');
+selectionDiv.setAttribute('id', 'selectionDiv');
 
 gameFragment.appendChild(gameSection);
 gameSection.appendChild(gameContainer);
@@ -86,13 +87,12 @@ function getRandomNumbers(arr1, arr2) {
 
   return [randomNumber, randomNumbers];
 }
-
-const saveWords = async () => {
+const startGame = async function () {
   const words = await getWords();
-  const alfabeto = words.sustantivos.alfabeto;
-  const numeros = words.sustantivos.numeros;
-  const masculino = words.sustantivos.masculino;
-  const feminino = words.sustantivos.feminino;
+  const alfabeto = words.alfabeto;
+  const numeros = words.numeros;
+  const masculino = words.masculino;
+  const feminino = words.feminino;
   const adjectivosO = words.adjectivos.o;
   const adjectivosOthers = words.adjectivos.others;
   const verbos = words.verbos;
@@ -109,34 +109,42 @@ const saveWords = async () => {
     preguntas,
     dias
   );
-  return allWords;
-};
 
-const startGame = async function () {
-  const allWords = await saveWords();
   const keys = getFirstKeys(allWords);
   const values = getFirstValues(allWords);
   const randomNumbers = getRandomNumbers(keys, values);
-  const selectionsList = [];
-  gameWordH.innerText = keys[randomNumbers[0]];
-  gameWordH.setAttribute('id', `${randomNumbers[0]}`);
-  randomNumbers[1].forEach((e) => {
-    const selections = document.createElement('div');
-    selections.innerText = values[e];
-    selections.classList.add('selections');
-    selections.setAttribute('id', `${e}`);
-    selectionDiv.append(selections);
-    selectionsList.push(selections);
-  });
+  let selectionsList = [];
+
+  function playRound() {
+    const randomWord = keys[randomNumbers[0]];
+    if (getFirstKeys(masculino).includes(randomWord)) {
+      gameWordH.innerText = `el ${randomWord}`;
+    } else if (getFirstKeys(feminino).includes(randomWord)) {
+      gameWordH.innerText = `la ${randomWord}`;
+    } else {
+      gameWordH.innerText = `${randomWord}`;
+    }
+    gameWordH.setAttribute('id', `${randomNumbers[0]}`);
+    randomNumbers[1].forEach((e) => {
+      const selections = document.createElement('div');
+      selections.innerText = values[e];
+      selections.classList.add('selections');
+      selections.setAttribute('id', `${e}`);
+      selectionDiv.append(selections);
+      selectionsList.push(selections);
+    });
+  }
+
+  playRound();
 
   selectionsList.forEach((e) => {
     e.addEventListener('click', function () {
       if (e.id === gameWordH.id) {
         console.log('true');
+        e.style.backgroundColor = '#E5EBB2';
         setTimeout(function () {
           window.location.reload();
         }, 1000);
-        e.style.backgroundColor = '#90A17D';
       } else {
         e.style.backgroundColor = '#B97A95';
       }
@@ -144,5 +152,4 @@ const startGame = async function () {
   });
 };
 
-saveWords();
 startGame();
