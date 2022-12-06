@@ -92,15 +92,15 @@ const startGame = async function () {
   const alfabeto = words.alfabeto;
   const numeros = words.numeros;
   const masculino = words.masculino;
-  const feminine = words.feminino;
+  const feminine = words.feminine;
   const adjectivosO = words.adjectivos.o;
   const adjectivosOthers = words.adjectivos.others;
   const verbos = words.verbos;
   const preguntas = words.preguntas;
   const dias = words.dias;
-  const adverbios = words.adverbios;
-  const pronombres = words.pronombres;
   const frases = words.frases;
+  const pronombres = words.pronombres;
+  const adverbios = words.adverbios;
 
   const allWords = alfabeto.concat(
     numeros,
@@ -110,10 +110,10 @@ const startGame = async function () {
     adjectivosOthers,
     verbos,
     preguntas,
-    dias,
-    adverbios,
     frases,
-    pronombres
+    pronombres,
+    adverbios,
+    dias
   );
 
   const keys = getFirstKeys(allWords);
