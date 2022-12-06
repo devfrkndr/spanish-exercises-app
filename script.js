@@ -92,22 +92,28 @@ const startGame = async function () {
   const alfabeto = words.alfabeto;
   const numeros = words.numeros;
   const masculino = words.masculino;
-  const feminino = words.feminino;
+  const feminine = words.feminino;
   const adjectivosO = words.adjectivos.o;
   const adjectivosOthers = words.adjectivos.others;
   const verbos = words.verbos;
   const preguntas = words.preguntas;
   const dias = words.dias;
+  const adverbios = words.adverbios;
+  const pronombres = words.pronombres;
+  const frases = words.frases;
 
   const allWords = alfabeto.concat(
     numeros,
     masculino,
-    feminino,
+    feminine,
     adjectivosO,
     adjectivosOthers,
     verbos,
     preguntas,
-    dias
+    dias,
+    adverbios,
+    frases,
+    pronombres
   );
 
   const keys = getFirstKeys(allWords);
@@ -125,7 +131,7 @@ const startGame = async function () {
     const randomWord = keys[randomNumbers[0]];
     if (getFirstKeys(masculino).includes(randomWord)) {
       gameWordH.innerText = `el ${randomWord}`;
-    } else if (getFirstKeys(feminino).includes(randomWord)) {
+    } else if (getFirstKeys(feminine).includes(randomWord)) {
       gameWordH.innerText = `la ${randomWord}`;
     } else {
       gameWordH.innerText = `${randomWord}`;
