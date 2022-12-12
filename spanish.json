@@ -129,6 +129,7 @@
   "feminine": [
     { "tasa": "cup" },
     { "paz": "peace" },
+    { "parada": "stop" },
     { "ventana": "window" },
     { "vaca": "cow" },
     { "escalera": "stairs" },
@@ -288,6 +289,7 @@
     },
     {"seguir": "to follow"},
     {"bajar": "to go down"},
+    {"tomar": "to take"},
     {"nadar": "to swim"},
     {"pesar": "to weight"},
     {"conectar": "to connect"},
@@ -666,7 +668,9 @@
     { "de lujo": "luxury" },
     { "desde luego": "of course" },
     { "qué guay": "how cool" },
-    { "enhorabuena": "congratulations" }
+    { "enhorabuena": "congratulations" },
+    { "cerca": "close" },
+    { "al lado": "next to" }
   ],
   "pronombres": [
     { "algo": "something" },
@@ -690,6 +694,7 @@
   "adverbios": [
     { "casi": "almost" },
     { "entonces": "then" },
+    { "lejos": "far" },
     { "miércoles": "wednesday" },
     { "jueves": "thursday" },
     { "viernes": "friday" },
