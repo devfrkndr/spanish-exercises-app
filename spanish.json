@@ -72,6 +72,10 @@
   "masculino": [
     { "sal": "salt" },
     { "miedo": "fear" },
+    { "tenedor": "fork" },
+    { "cuchillo": "knife" },
+    { "marido": "husband" },
+    { "matadero": "slaughterhouse" },
     { "tipo": "type" },
     { "dormitorio": "type" },
     { "pez": "fish" },
@@ -128,7 +132,15 @@
   ],
   "feminine": [
     { "tasa": "cup" },
+    { "risa": "laughter" },
     { "paz": "peace" },
+    { "cuchara": "spoon" },
+    { "ventaja": "advantage" },
+    { "costa": "coast" },
+    { "calma": "calm" },
+    { "carpeta": "folder, file" },
+    { "sombra": "shadow" },
+    { "hacha": "axe" },
     { "parada": "stop" },
     { "ventana": "window" },
     { "vaca": "cow" },
@@ -209,8 +221,12 @@
     "o": [
       { "amerillo": "yellow" },
       { "preocupado": "worried" },
+      { "otro": "another" },
+      { "herido": "wounded" },
+      { "pensado": "well-considired" },
       { "contento": "happy" },
       { "seguro": "safe, sure, secure" },
+      { "así": "like that" },
       { "maduro": "mature" },
       { "árbol": "tree" },
       { "verdadero": "true" },
@@ -272,378 +288,100 @@
     "others": [
       { "callado": "silent" },
       { "saliente": "outgoing" },
+      { "cualquier": "any" },
+      { "libre": "free" },
       { "primer": "first" }
     ]
   },
   "verbos": [
+    { "extinguir": "to extinguish" },
+    { "disparar": "to shoot" },
+    { "pedir": "to ask for, to order" },
+    { "deber": "to owe, to should" },
+    { "conectar": "to connect, to get along with" },
+    { "mandar": "to order, to send" },
+    { "vivir": "to live" },
+    { "volver": "to return" },
+    { "explicar": "to explain" },
+    { "seguir": "to follow" },
+    { "bajar": "to go down" },
+    { "encontrar": "to find" },
+    { "tomar": "to take" },
+    { "nadar": "to swim" },
+    { "pesar": "to weight" },
+    { "conectar": "to connect" },
+    { "abrir": "to open" },
+    { "pasear": "to go for a walk" },
+    { "hornear": "to bake" },
+    { "girar": "to turn" },
+    { "mostrar": "to show" },
+    { "oler": "to smel" },
+    { "ahorrar": "to save" },
+    { "seguir": "to follow" },
+    { "pegar": "to hit, to paste" },
+    { "destecar": "to emphasize" },
+    { "mirar": "to look at" },
+    { "freír": "to fry" },
+    { "venir": "to come" },
+    { "borrar": "to delete" },
+    { "acabar": "to finish" },
+    { "sonreír": "to smile" },
+    { "fastidiar": "to annoy" },
+    { "creer": "to believe" },
+    { "parar": "to stop" },
+    { "arreglar": "to fix, to reparir" },
+    { "quedarse": "to stay" },
+    { "probar": "to try, to taste" },
+    { "discrutir": "to argue" },
+    { "alcanzar": "to reach" },
+    { "manejar": "to handle, to drive" },
+    { "poder": "to be able to" },
+    { "esperar": "to wait" },
+    { "llegar": "to arrive" },
+    { "reseńar": "to review" },
+    { "pensar": "to think" },
+    { "poder": "to be able to" },
+    { "levantar": "to raise" },
+    { "ańadir": "to add" },
+    { "roncar": "to snore" },
+    { "salir": "to go out" },
+    { "quitar": "to remove" },
+    { "correr": "to run" },
+    { "caminar": "to walk" },
+    { "andar": "to walk" },
+    { "mostrar": "to show" },
+    { "olvidar": "to forget" },
+    { "dirigir": "to manage" },
+    { "escoger": "to choose",
+    { "exigir": "to demand" },
+    { "recoger": "to gather, to pick up" },
+    { "caber": "to fit" },
+    { "caer": "to fall" },
+    { "conocer": "to know" },
+    { "dar": "to give" },
+    { "hacer": "to do, to make" },
+    { "poner": "to put" },
+    { "saber": "to know, to taste" },
+    { "salir": "to go out, to leave" },
+    { "traducir": "to translate" },
+    { "traer": "to bring" },
     {
-      "extinguir": "to extinguish",
-      "el presente simple": [
-        "extingo",
-        "extingues",
-        "extingue",
-        "extinguimos",
-        "extinuís",
-        "extinguen"
-      ]
-    },
-    {"seguir": "to follow"},
-    {"bajar": "to go down"},
-    {"tomar": "to take"},
-    {"nadar": "to swim"},
-    {"pesar": "to weight"},
-    {"conectar": "to connect"},
-    {"abrir": "to open"},
-    {"pasear": "to go for a walk"},
-    {"hornear": "to bake"},
-    {"girar": "to turn"},
-    {"mostrar": "to show"},
-    {"oler": "to smel"},
-    {"ahorrar": "to save"},
-    {"seguir": "to follow"},
-    {"pegar": "to hit, to paste"},
-    {"destecar": "to emphasize"},
-    {"mirar": "to look at"},
-    {"freír": "to fry"},
-    {"venir": "to come"},
-    {"borrar": "to delete"},
-    {"acabar": "to finish"},
-    {"sonreír": "to smile"},
-    {"fastidiar": "to annoy"},
-    {"creer": "to believe"},
-    {"parar": "to stop"},
-    {"arreglar": "to fix, to reparir"},
-    {"quedarse": "to stay"},
-    {"probar": "to try, to taste"},
-    {"discrutir": "to argue"},
-    {"alcanzar": "to reach"},
-    {"manejar": "to handle, to drive"},
-    {"poder": "to be able to"},
-    {"esperar": "to wait"},
-    {"llegar": "to arrive"},
-    {"reseńar": "to review"},
-    {"pensar": "to think"},
-    {"poder": "to be able to"},
-    {"levantar": "to raise"},
-    {"ańadir": "to add"},
-    {"roncar": "to snore"},
-    {"salir": "to go out"},
-    {"quitar": "to remove"},
-    {"correr": "to run"},
-    {"volver": "to return"},
-    {"caminar": "to walk"},
-    {"andar": "to walk"},
-    {"mostrar": "to show"},
-    {"olvidar": "to forget"},
-    {
-      "dirigir": "to manage",
-      "el presente simple": [
-        "dirijo",
-        "diriges",
-        "dirige",
-        "dirigimos",
-        "dirigís",
-        "dirigen"
-      ]
-    },
-    {
-      "escoger": "to choose",
-      "el presente simple": [
-        "escojo",
-        "escoges",
-        "escoge",
-        "escogemos",
-        "escogéis",
-        "escogen"
-      ]
-    },
-    {
-      "exigir": "to demand",
-      "el presente simple": [
-        "exijo",
-        "exiges",
-        "exigige",
-        "exigigimos",
-        "exigís",
-        "extinguen"
-      ]
-    },
-    {
-      "recoger": "to gather, to pick up",
-      "el presente simple": [
-        "recojo",
-        "recoges",
-        "recoge",
-        "recogemos",
-        "recogéis",
-        "recogen"
-      ]
-    },
-    {
-      "caber": "to fit",
-      "el presente simple": [
-        "quepo",
-        "cabes",
-        "caben",
-        "cabemos",
-        "cabéis",
-        "caben"
-      ]
-    },
-    {
-      "caer": "to fall",
-      "el presente simple": ["caigo", "caes", "cae", "caemos", "caéis", "caen"]
-    },
-    {
-      "conocer": "to know",
-      "el presente simple": [
-        "conozco",
-        "conoces",
-        "conoce",
-        "conocemos",
-        "conocéis",
-        "conocen"
-      ]
-    },
-    {
-      "dar": "to give",
-      "el presente simple": ["doy", "das", "da", "damos", "dáis", "dan"]
-    },
-    {
-      "hacer": "to do, to make",
-      "el presente simple": [
-        "hago",
-        "haces",
-        "hace",
-        "hacemos",
-        "hacéis",
-        "hacen"
-      ]
-    },
-    {
-      "poner": "to put",
-      "el presente simple": [
-        "pongo",
-        "pones",
-        "pone",
-        "ponemos",
-        "poneis",
-        "ponen"
-      ]
-    },
-    {
-      "saber": "to know, to taste",
-      "el presente simple": [
-        "sé",
-        "sabes",
-        "sabe",
-        "sabemos",
-        "sabéis",
-        "saben"
-      ]
-    },
-    {
-      "salir": "to go out, to leave",
-      "el presente simple": [
-        "salgo",
-        "sales",
-        "sale",
-        "salemos",
-        "saléis",
-        "salen"
-      ]
-    },
-    {
-      "traducir": "to translate",
-      "el presente simple": [
-        "traduzco",
-        "traduces",
-        "traduce",
-        "traducimos",
-        "traducís",
-        "traducen"
-      ]
-    },
-    {
-      "traer": "to bring",
-      "el presente simple": [
-        "traigo",
-        "traes",
-        "trae",
-        "tracemos",
-        "tracéis",
-        "tracen"
-      ]
-    },
-    {
-      "valer": "to worth",
-      "el presente simple": [
-        "valgo",
-        "vales",
-        "vale",
-        "valemos",
-        "valéis",
-        "valen"
-      ]
-    },
-    {
-      "ver": "to see",
-      "el presente simple": ["veo", "ves", "ve", "vemos", "veis", "ven"]
-    },
-    {
-      "acertar": "to guess",
-      "el presente simple": [
-        "acierto",
-        "aciertes",
-        "acierte",
-        "acertamos",
-        "acertáis",
-        "aciertan"
-      ]
-    },
-    {
-      "atravesar": "to cross",
-      "el presente simple": [
-        "atravieso",
-        "atraviesas",
-        "atraciesa",
-        "atravesamos",
-        "atravesáis",
-        "atraviesan"
-      ]
-    },
-    {
-      "cerrar": "to close",
-      "el presente simple": [
-        "cierro",
-        "cierras",
-        "cierra",
-        "cerramos",
-        "cerráis",
-        "cierran"
-      ]
-    },
-    {
-      "confesar": "to confess",
-      "el presente simple": [
-        "confieso",
-        "confiesas",
-        "confiesa",
-        "confesamos",
-        "confesáis",
-        "confeisan"
-      ]
-    },
-    {
-      "defender": "to defend",
-      "el presente simple": [
-        "defiendo",
-        "defiendes",
-        "defiende",
-        "defendemos",
-        "defendéis",
-        "defenden"
-      ]
-    },
-    {
-      "despertarse": "to wake up",
-      "el presente simple": [
-        "me despierto",
-        "te despiertas",
-        "se despierta",
-        "nos despertamos",
-        "os despertáis",
-        "se despiertan"
-      ]
-    },
-    {
-      "empezar": "to begin, to start",
-      "el presente simple": [
-        "empierzo",
-        "empierzas",
-        "empierza",
-        "empezamos",
-        "empezáis",
-        "empiezan"
-      ]
-    },
-    {
-      "encerrar": "to enclose",
-      "el presente simple": [
-        "encierro",
-        "encierras",
-        "encierra",
-        "encerramos",
-        "encerráis",
-        "encerran"
-      ]
-    },
-    {
-      "fregar": "to scrub, to wash",
-      "el presente simple": [
-        "friego",
-        "friegas",
-        "friega",
-        "fregamos",
-        "fregáis",
-        "friegan"
-      ]
-    },
-    {
-      "mentir": "to lie",
-      "el presente simple": [
-        "miento",
-        "mientes",
-        "miente",
-        "mentimos",
-        "mentís",
-        "mienten"
-      ]
-    },
-    {
-      "nevar": "to snow",
-      "el presente simple": [
-        "nievo",
-        "nievas",
-        "nieva",
-        "nevamos",
-        "neváis",
-        "nievan"
-      ]
-    },
-    {
-      "perder": "to lose",
-      "el presente simple": [
-        "pierdo",
-        "pierdes",
-        "pierde",
-        "perdemos",
-        "perdéis",
-        "pierden"
-      ]
-    },
-    {
-      "recomendar": "to recommend",
-      "el presente simple": [
-        "recomiendo",
-        "recomiendas",
-        "recomienda",
-        "recomendamos",
-        "recomandáís",
-        "recomiendan"
-      ]
-    },
-    {
-      "sentarse": "to sit",
-      "el presente simple": [
-        "me siento",
-        "te sientes",
-        "se siente",
-        "nos sentamos",
-        "os sentáis",
-        "se sientan"
-      ]
-    }
+      "valer": "to worth" },
+    { "ver": "to see" },
+    { "acertar": "to guess" },
+    { "atravesar": "to cross" },
+    { "cerrar": "to close" },
+    { "confesar": "to confess" },
+    { "defender": "to defend" },
+    { "despertarse": "to wake up" },
+    { "empezar": "to begin, to start" },
+    { "encerrar": "to enclose" },
+    { "fregar": "to scrub, to wash" },
+    { "mentir": "to lie" },
+    { "nevar": "to snow" },
+    { "perder": "to lose" },
+    { "recomendar": "to recommend" },
+    { "sentarse": "to sit" }
   ],
   "preguntas": [
     { "cuándo": "when" },
@@ -655,9 +393,29 @@
     { "adóne": "to where" },
     { "por dónde": "whereabout" }
   ],
+  "conjunction": [
+    { "mientras": "while" },
+    { "por dónde": "whereabout" }
+  ],
+  "pronombres": [
+    { "alguien": "someone" },
+    { "alguna": "alguna" }
+  ],
   "frases": [
     { "a veces": "sometimes" },
+    { "a ver": "let's see" },
+    { "nada mas": "that's all, no more than that" },
+    { "por el momento": "at the moment" },
+    { "a un lado": "aside" },
+    { "de momento": "ath he moment" },
+    { "por si": "in case" },
+    { "puede ser": "maybe" },
+    { "de hecho": "in fact" },
+    { "en primer lugar": "first of all" },
+    { "al parecer": "it seems" },
+    { "por eso": "that's why" },
     { "a qué hora": "at what time" },
+    { "al menos que": "at least" },
     { "qué va": "come on" },
     { "algo más": "anything else" },
     { "vamos a": "let's" },
@@ -668,6 +426,8 @@
     { "de lujo": "luxury" },
     { "desde luego": "of course" },
     { "qué guay": "how cool" },
+    { "por aqui": "this way" },
+    { "antes de nada": "first of all" },
     { "enhorabuena": "congratulations" },
     { "cerca": "close" },
     { "al lado": "next to" }
@@ -691,9 +451,35 @@
     { "sábado": "saturday" },
     { "domingo": "sunday" }
   ],
+  "idiomas": [
+    { "tener calor": "to be hot" },
+    { "tener cuidado": "to be careful" },
+    { "tener celos": "to be jealous" },
+    { "tener la culpa": "to be at fault" },
+    { "tener dolor de (cabeza)": "to have a headache, stomache etc." },
+    { "tener envidia": "to be envious" },
+    { "tener éxito": "to be succesfull, to have success" },
+    { "tener frío": "to be cold" },
+    { "tener ganas de": "to want, to desire" },
+    { "tener hambre": "to be hungary" },
+    { "tener la palabra": "to have the flor" },
+    { "tener lugar": "to take place" },
+    { "tener miedo de": "to be afraid of" },
+    { "tener prisa": "to be in a hurry" },
+    { "tener que ver con": "to have to do with" },
+    { "tener rabia": "to be in a range, to be very angry" },
+    { "tener razón": "to be right" },
+    { "tener sed": "to be thirsty" },
+    { "tener sueño": "to be sleepy" },
+    { "tener suerte": "to be lucky" },
+    { "tener verguenza": "to be ashamed" },
+  ],
   "adverbios": [
     { "casi": "almost" },
+    { "ahí": "there" },
+    { "ya": "already" },
     { "entonces": "then" },
+    { "fuera": "outside" },
     { "lejos": "far" },
     { "miércoles": "wednesday" },
     { "jueves": "thursday" },
