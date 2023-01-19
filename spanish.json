@@ -365,8 +365,7 @@
     { "salir": "to go out, to leave" },
     { "traducir": "to translate" },
     { "traer": "to bring" },
-    {
-      "valer": "to worth" },
+    { "valer": "to worth" },
     { "ver": "to see" },
     { "acertar": "to guess" },
     { "atravesar": "to cross" },
@@ -396,10 +395,6 @@
   "conjunction": [
     { "mientras": "while" },
     { "por dónde": "whereabout" }
-  ],
-  "pronombres": [
-    { "alguien": "someone" },
-    { "alguna": "alguna" }
   ],
   "frases": [
     { "a veces": "sometimes" },
@@ -435,6 +430,8 @@
   "pronombres": [
     { "algo": "something" },
     { "a qué hora": "at what time" },
+    { "alguien": "someone" },
+    { "alguna": "alguna" },
     { "por qué": "why" },
     { "cuál": "which" },
     { "cuánto": "how much" },

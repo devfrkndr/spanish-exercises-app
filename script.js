@@ -1,22 +1,22 @@
-'use strict';
+"use strict";
 
 const gameFragment = document.createDocumentFragment();
 
-const gameSection = document.createElement('section');
-gameSection.classList.add('gameSection');
+const gameSection = document.createElement("section");
+gameSection.classList.add("gameSection");
 
-const gameContainer = document.createElement('div');
-gameContainer.classList.add('container');
+const gameContainer = document.createElement("div");
+gameContainer.classList.add("container");
 
-const gameWordDiv = document.createElement('div');
-gameWordDiv.classList.add('gameWordDiv');
+const gameWordDiv = document.createElement("div");
+gameWordDiv.classList.add("gameWordDiv");
 
-const gameWordH = document.createElement('div');
-gameWordH.classList.add('gameWordH');
+const gameWordH = document.createElement("div");
+gameWordH.classList.add("gameWordH");
 
-const selectionDiv = document.createElement('div');
-selectionDiv.classList.add('selectionDiv');
-selectionDiv.setAttribute('id', 'selectionDiv');
+const selectionDiv = document.createElement("div");
+selectionDiv.classList.add("selectionDiv");
+selectionDiv.setAttribute("id", "selectionDiv");
 
 gameFragment.appendChild(gameSection);
 gameSection.appendChild(gameContainer);
@@ -27,7 +27,7 @@ gameWordDiv.appendChild(gameWordH);
 document.body.append(gameFragment);
 
 const getWords = async function () {
-  const response = await fetch('./spanish.json');
+  const response = await fetch("./spanish.json");
   const data = await response.json();
   return data;
 };
@@ -101,6 +101,8 @@ const startGame = async function () {
   const frases = words.frases;
   const pronombres = words.pronombres;
   const adverbios = words.adverbios;
+  const conjunction = words.conjunction;
+  const idiomas = words.idiomas;
 
   const allWords = alfabeto.concat(
     numeros,
@@ -113,7 +115,9 @@ const startGame = async function () {
     frases,
     pronombres,
     adverbios,
-    dias
+    dias,
+    idiamos,
+    conjunction
   );
 
   const keys = getFirstKeys(allWords);
@@ -136,12 +140,12 @@ const startGame = async function () {
     } else {
       gameWordH.innerText = `${randomWord}`;
     }
-    gameWordH.setAttribute('id', `${randomNumbers[0]}`);
+    gameWordH.setAttribute("id", `${randomNumbers[0]}`);
     randomNumbers[1].forEach((e) => {
-      const selections = document.createElement('div');
+      const selections = document.createElement("div");
       selections.innerText = values[e];
-      selections.classList.add('selections');
-      selections.setAttribute('id', `${e}`);
+      selections.classList.add("selections");
+      selections.setAttribute("id", `${e}`);
       selectionDiv.append(selections);
       selectionsList.push(selections);
     });
@@ -155,16 +159,16 @@ const startGame = async function () {
   console.log(randomNumbers, selectionsList);
 
   function deleteNodes() {
-    const selectionNode = document.getElementById('selectionDiv');
+    const selectionNode = document.getElementById("selectionDiv");
     while (selectionNode.firstChild) {
       selectionNode.removeChild(selectionNode.lastChild);
     }
   }
 
   function clickFunction(e) {
-    e.addEventListener('click', function () {
+    e.addEventListener("click", function () {
       if (e.id === gameWordH.id) {
-        e.style.backgroundColor = '#E5EBB2';
+        e.style.backgroundColor = "#E5EBB2";
         setTimeout(function () {
           selectionsList = [];
           deleteNodes();
@@ -175,7 +179,7 @@ const startGame = async function () {
           // window.top.location.reload(true);
         }, 1000);
       } else if (e.id !== gameWordH.id) {
-        e.style.backgroundColor = '#B97A95';
+        e.style.backgroundColor = "#B97A95";
       }
     });
   }
