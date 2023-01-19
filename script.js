@@ -116,7 +116,7 @@ const startGame = async function () {
     pronombres,
     adverbios,
     dias,
-    idiamos,
+    idiomas,
     conjunction
   );
 
